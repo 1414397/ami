@@ -20,5 +20,7 @@ if($myage>21){
         elseif($myage>16){
             echo"spaces";}
 
+echo"name";
+
 
 ?>
