@@ -11,4 +11,12 @@ echo 5*9;
 echo "<br>";
 $name="jiyani";
 echo $name." ami";
+$myage=10;
+
+if($myage>16)
+    echo "buy specs";
+    elseif($myage>18)
+        echo "mugs";
+        else
+            echo"sausage";
 ?>
