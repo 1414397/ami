@@ -6,4 +6,5 @@
  * Time: 21:17
  */
 echo "ami jiyani";
+echo "<br>"."how"." are "." you"
 ?>
