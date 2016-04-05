@@ -11,7 +11,7 @@ echo 5*9;
 echo "<br>";
 $name="jiyani";
 echo $name." ami";
-$myage=15;
+$myage=19;
 echo "<br>";
 if($myage>21)
     echo "sausage";
