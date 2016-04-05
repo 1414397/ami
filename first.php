@@ -19,4 +19,6 @@ if($myage>21)
         echo "mugs";
         elseif($myage>16)
             echo"spaces";
+
+
 ?>
