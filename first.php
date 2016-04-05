@@ -14,9 +14,9 @@ echo $name." ami";
 $myage=22;
 echo "<br>";
 if($myage>21)
-    echo "buy specs";
+    echo "sausage";
     elseif($myage>18)
         echo "mugs";
         elseif($myage>16)
-            echo"sausage";
+            echo"spaces";
 ?>
