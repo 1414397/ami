@@ -13,12 +13,12 @@ $name="jiyani";
 echo $name." ami";
 $myage=19;
 echo "<br>";
-if($myage>21)
-    echo "sausage";
-    elseif($myage>18)
-        echo "mugs";
-        elseif($myage>16)
-            echo"spaces";
+if($myage>21){
+    echo "sausage";}
+    elseif($myage>18){
+        echo "mugs";}
+        elseif($myage>16){
+            echo"spaces";}
 
 
 ?>
