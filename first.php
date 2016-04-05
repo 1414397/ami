@@ -6,5 +6,9 @@
  * Time: 21:17
  */
 echo "ami jiyani";
-echo " how"." are "." you";
+echo " how"." are "." you<br>";
+echo 5*9;
+echo "<br>";
+$name="jiyani";
+echo $name." ami";
 ?>
