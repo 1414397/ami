@@ -8,7 +8,7 @@
 
 
  $arr=array("A","B","C");
- echo $arr[0]."   ".$arr[1]."   ".$arr[2]."   ";
+ echo $arr[0];
 unset $arr[1];
 echo <br>;
 echo $arr[0]."   ".$arr[1]."   ".$arr[2]."   ";
