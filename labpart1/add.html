@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
+    <link href='https://fonts.googleapis.com/css?family=Amiri:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header>
+
+    <a href="index.html"> <img src="logo.png" id="logo"></a>
+    <h1>Bug Tracker</h1>
+    <h3>Keeping trackof all the pesky little bugs</h3>
+
+</header>
+<main>
+    <nav>
+        <ul id="mainlist">
+            <li><a href="list.html">All Bug Items</a></li>
+            <li><a href="list.html">Android Bugs</a></li>
+            <li><a href="list.html">iOS Bugs</a></li>
+            <li><a href="list.html">Windows Bugs</a></li>
+            <li><a href="add.html">Insert Bugs</a></li>
+        </ul>
+
+    </nav>
+    <section>
+
+        <form>
+                <br><br><label >Bug Name       </label><input type="text" name="bugname" size="45" REQUIRED> <br><br>
+                <label>Bug Summary</label><textarea name="summary" cols="45" rows="5" required></textarea><br>
+                <label>Bug Category</label>
+                <select name="category" required>
+                    <option value="">select category</option>
+                    <option value="android">Android Bugs</option>
+                    <option value="ios">iOS Bugs</option>
+                    <option value="windows">Windows Bugs</option>
+                </select>
+                <br><br><input type="Submit">
+
+        </form>
+    </section>
+</main>
+<footer>
+    <p>Designed by[Ami Jiyani[2016]]</p>
+</footer>
+</body>
+</html>
