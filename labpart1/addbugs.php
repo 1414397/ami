@@ -49,17 +49,16 @@
         elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // execute if requested using HTTP POST Method
         include("connection.php");
-        $bugID = $_POST["bugID"];
         $bugName = $_POST["bugName"];
         $bugSummary = $_POST["bugSummary"];
         $bugCategory=$_POST["bugCategory"];
-        $sql = "INSERT INTO bugs (bugID, bugName, bugSummary, bugCategory) VALUES ('$bugID', '$bugName',' $bugSummary', '$bugCategory')";
+        $sql = "INSERT INTO bugs (bugName, bugSummary, bugCategory) VALUES ('$bugName',' $bugSummary', '$bugCategory')";
         if (mysqli_query($db, $sql)) {
         }
         else {
         echo "Error: " . $sql . "<br>" . mysqli_error($db);
         }
-        header("location:in.php");
+        header("location:showbugs.php");
 
 
         }
