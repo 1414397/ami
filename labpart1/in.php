@@ -10,7 +10,7 @@
 <body>
 <header>
 
-    <p><a href="index.html"> <img src="logo.png" id="logo" alt="LOGO"></a>
+    <p><a href="in.php"> <img src="logo.png" id="logo" alt="LOGO"></a>
     <h1>Bug Tracker</h1>
     <h3>Keeping track of all the pesky little bugs</h3>
     </p>
@@ -22,7 +22,7 @@
             <li><a href="showbugs.php">Android Bugs</a></li>
             <li><a href="showbugs.php">iOS Bugs</a></li>
             <li><a href="showbugs.php">Windows Bugs</a></li>
-            <li><a href="addbuds.php">Insert Bugs</a></li>
+            <li><a href="addbugs.php">Insert Bugs</a></li>
         </ul>
 
     </nav>
