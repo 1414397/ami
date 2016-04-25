@@ -12,7 +12,7 @@
 
     <a href="in.php"> <img src="logo.png" id="logo"></a>
     <h1>Bug Tracker</h1>
-    <h3>Keeping trackof <?php bloginfo('url'); ?> the pesky little bugs</h3>
+    <h3>Keeping track of all the pesky little bugs</h3>
 
 </header>
 <main class="grid-container">
