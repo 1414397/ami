@@ -42,6 +42,7 @@
         if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
                 echo "<br>Bug Name:  " . $row["bugName"]. "<br>Bug Summary:  " . $row["bugSummary"].  "<br>Bug Category " . $row["bugCategory"]." " ."<br>";
+
             }
         } else {
             echo "0 results";
