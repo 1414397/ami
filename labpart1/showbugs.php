@@ -27,34 +27,30 @@
 
     </nav>
     <aside class="grid-66">
-        <p> Bug Name: StageFright
-            <br>Bug Category: Android
-            <br> Bug Summary: Stagefright is the collective name for a group of software bugs, that affect versions 2.2 and newer of the Android operating system,
-            allowing an attacker to perform arbitrary operations on the victim device through remote code execution and privilege escalation.
-        </p>
+        <?php
+        /**
+         * Created by PhpStorm.
+         * User: Aaru
+         * Date: 25/04/2016
+         * Time: 21:52
+         */
+        include('connection.php');
+        $sql = "SELECT * FROM bugs";
+
+        $result =mysqli_query($db, $sql);
+        if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) {
+                echo  "Bub ID:  ".$row["bugID"]. "<br>Bug Name:  " . $row["bugName"]. "<br>Bug Summary:  " . $row["bugSummary"].  "<br>Bug Category " . $row["bugCategory"]." " ."<br>";
+            }
+        } else {
+            echo "0 results";
+        }
+        ?>
     </aside>
 </main>
 <footer>
     <p>Designed by[Ami Jiyani[2016]]</p>
 </footer>
-<?php
-/**
- * Created by PhpStorm.
- * User: Aaru
- * Date: 25/04/2016
- * Time: 21:52
- */
-include('connection.php');
-$sql = "SELECT * FROM bugs";
 
-$result =mysqli_query($db, $sql);
-if (mysqli_num_rows($result) > 0) {
-    while($row = mysqli_fetch_assoc($result)) {
-        echo  "Bub ID:  ".$row["bugID"]. "<br>Bug Name:  " . $row["bugName"]. "<br>Bug Summary:  " . $row["bugSummary"].  "<br>Bug Category " . $row["bugCategory"]." " ."<br>";
-    }
-} else {
-    echo "0 results";
-}
-?>
 </body>
 </html>
