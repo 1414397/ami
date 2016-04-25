@@ -19,9 +19,9 @@
     <nav class="grid-33">
         <ul id="mainlist">
             <li><a href="showbugs.php">All Bug Items</a></li>
-            <li><a href="showbugs.php">Android Bugs</a></li>
-            <li><a href="showbugs.php">iOS Bugs</a></li>
-            <li><a href="showbugs.php">Windows Bugs</a></li>
+            <li><a href="showBugs.php?category=Android Bugs">Android Bugs</a></li>
+            <li><a href="showbugs.php?category=iOS Bugs">iOS Bugs</a></li>
+            <li><a href="showbugs.php?category=Windows Bugs">Windows Bugs</a></li>
             <li><a href="addbugs.php">Insert Bugs</a></li>
         </ul>
 
@@ -35,7 +35,8 @@
          * Time: 21:52
          */
         include('connection.php');
-        $sql = "SELECT * FROM bugs";
+        $category=$_GET["category"];
+        $sql = "SELECT * FROM bugs WHERE bugCategory=$category";
 
         $result =mysqli_query($db, $sql);
         if (mysqli_num_rows($result) > 0) {
