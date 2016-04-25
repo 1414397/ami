@@ -36,7 +36,7 @@
          */
         include('connection.php');
         $category=$_GET["category"];
-        $sql = "SELECT * FROM bugs WHERE bugCategory=$category";
+        $sql = "SELECT * FROM bugs WHERE bugCategory='$category'";
 
         $result =mysqli_query($db, $sql);
         if (mysqli_num_rows($result) > 0) {
