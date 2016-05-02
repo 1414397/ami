@@ -18,7 +18,7 @@
 <main class="grid-container">
     <nav class="grid-33">
         <ul id="mainlist">
-            <li><a href="showbugs.php?category=all">All Bug Items</a></li>
+            <li><a href="showbugs.php">All Bug Items</a></li>
             <li><a href="showBugs.php?category=Android Bugs">Android Bugs</a></li>
             <li><a href="showbugs.php?category=iOS Bugs">iOS Bugs</a></li>
             <li><a href="showbugs.php?category=Windows Bugs">Windows Bugs</a></li>
@@ -36,7 +36,7 @@
          */
         include('connection.php');
         $category=$_GET["category"];
-        if($category=="all"){
+        if($category==NULL){
             $sql = "SELECT * FROM bugs";
         }
         else{
