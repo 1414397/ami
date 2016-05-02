@@ -19,9 +19,9 @@
     <nav class="grid-33">
         <ul id="mainlist">
             <li><a href="showbugs.php">All Bug Items</a></li>
-            <li><a href="showbugs.php">Android Bugs</a></li>
-            <li><a href="showbugs.php">iOS Bugs</a></li>
-            <li><a href="showbugs.php">Windows Bugs</a></li>
+            <li><a href="showBugs.php?category=Android Bugs">Android Bugs</a></li>
+            <li><a href="showbugs.php?category=iOS Bugs">iOS Bugs</a></li>
+            <li><a href="showbugs.php?category=Windows Bugs">Windows Bugs</a></li>
             <li><a href="addbugs.php">Insert Bugs</a></li>
         </ul>
 
