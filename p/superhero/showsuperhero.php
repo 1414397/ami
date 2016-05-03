@@ -6,15 +6,19 @@ include("connection.php");
 $sql_query ="SELECT * FROM superheros" ;
 
 
-$result = $db->query($sql_query);
+$result =mysqli_query($db, $sql);
 
-while($row = $result ->fetch_array())
-{
-    echo "<p>" . $row['superheroID'] . $row['firstName'] . $row['lastName'] . $row['mainSuperpower'] ."<p>";
+if (mysqli_num_rows($result) > 0) {
+    while($row = mysqli_fetch_assoc($result)) {
+        echo "<p>" . $row['superheroID'] . $row['firstName'] . $row['lastName'] . $row['mainSuperpower'] ."<p>";
+    }
+} else {
+    echo "0 results";
 }
 
 $result->close();
 $db->close();
+
 
 header("location:index.php");
 
