@@ -8,7 +8,7 @@
 
 include("connection.php");
 
-$fname=$_POST["forname"];
+$fname=$_POST["forename"];
 $sname=$_POST["surname"];
 $power=$_POST["power"];
 
