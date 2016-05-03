@@ -8,13 +8,21 @@
 <body>
 
 
-<ul>
-    <li><a href="first.php">Home</a></li>
-    <li><a href="display.php">All Movies</a></li>
-    <li><a href="display.php">Created by Marvel Movie Studio</a></li>
-    <li><a href="display.php">Created After 2010</a></li>
-    <li><a href="display.php">XMen Films</a></li>
-</ul>
+<header>
+
+
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><a href="first.php">Home</a></li>
+            <li><a href="display.php?display=all<">All Movies</a></li>
+            <li><a href="display.php?display=marvelstudio">Created by Marvel Movie Studio</a></li>
+            <li><a href="display.php?display=after2010">Created After 2010</a></li>
+            <li><a href="display.php?dispaly=xmemfilms">XMen Films</a></li>
+        </ul>
+
+    </nav>
 
 <?php
 /**
