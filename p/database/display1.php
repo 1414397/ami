@@ -30,7 +30,7 @@
         }
         else if($display=="after2010")
         {
-        $sql = "SELECT * FROM marvelmovies1 WHERE yearReleased>'2010'";
+        $sql = "SELECT * FROM marvelmovies1 WHERE yearReleased > '2010'";
         }
         else if($display=="xmenfilms")
         {
