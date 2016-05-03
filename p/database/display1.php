@@ -14,7 +14,7 @@
     <nav>
         <ul>
             <li><a href="first.php">Home</a></li>
-            <li><a href="display1.php?display=all<">All Movies</a></li>
+            <li><a href="display1.php<">All Movies</a></li>
             <li><a href="display1.php?display=marvelstudio">Created by Marvel Movie Studio</a></li>
             <li><a href="display1.php?display=after2010">Created After 2010</a></li>
             <li><a href="display1.php?dispaly=xmemfilms">XMen Films</a></li>
@@ -25,7 +25,8 @@
         <?php
         include('connection.php');
         $display=$_GET["display"];
-        if($display=="all"){
+        if($display==NULL)
+        {
         $sql = "SELECT * FROM marvelmovies1";
         }
         else if($display=="after2010")
@@ -34,7 +35,7 @@
         }
         else if($display=="xmenfilms")
         {
-        $sql = "SELECT * FROM marvelmovies1 WHERE title like 'X-Man%'";
+            $sql = "SELECT * FROM marvelmovies WHERE title like 'X-Men%'";
         }
         else if($display=="marvelstudio")
         {
