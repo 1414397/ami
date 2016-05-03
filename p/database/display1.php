@@ -25,7 +25,7 @@
         <?php
         include('connection.php');
         $display=$_GET["display"];
-        if($display==NULL)
+        if($display == NULL)
         {
         $sql = "SELECT * FROM marvelmovies1";
         }
@@ -35,7 +35,7 @@
         }
         else if($display=="xmenfilms")
         {
-            $sql = "SELECT * FROM marvelmovies WHERE title like 'X-Men%'";
+            $sql = "SELECT * FROM marvelmovies WHERE title= 'X-Men%'";
         }
         else if($display=="marvelstudio")
         {
