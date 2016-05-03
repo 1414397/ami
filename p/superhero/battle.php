@@ -43,7 +43,7 @@
                     ?>
                 </select><br>
                  <br><br>
-                <label>The villan fought</label><input type="text" name="villan" maxlength="50" required>
+                <label>The villan fought</label><input type="text" name="villan" maxlength="50" required/>
                 <br><br><input type="submit" value="Submit">
             </form>
             <?
@@ -54,7 +54,7 @@
 
             include("connection.php");
 
-            $superheroID=$_POST["superheroID"];
+            $superheroID=$_POST["superhero"];
             $villan=$_POST["villan"];
 
 
