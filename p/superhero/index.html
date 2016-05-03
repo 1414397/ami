@@ -17,8 +17,8 @@
         <ul id="mainlist">
             <li> <a href="insertsuperhero.php">Superhero form</a> </li>
             <li> <a href="showsuperhero.php">Show Superheros</a>  </li>
-            <li> <a href="battle.php"></a> </li>
-            <li> <a href="displaybattles.php"></a>  </li>
+            <li> <a href="battle.php">Battele form</a> </li>
+            <li> <a href="displaybattles.php">Show Battles</a>  </li>
         </ul>
 
     </nav>
