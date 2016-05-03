@@ -32,7 +32,7 @@
         }
         else if($display=="xmenfilms")
         {
-            $sql = "SELECT * FROM marvelmovies WHERE title= 'X-Men%'";
+            $sql = "SELECT * FROM marvelmovies1 WHERE title= 'X-Men'";
         }
         else if($display=="marvelstudio")
         {
