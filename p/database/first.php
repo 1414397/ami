@@ -16,10 +16,10 @@
     <nav>
         <ul>
             <li><a href="first.php">Home</a></li>
-            <li><a href="display1.php<">All Movies</a></li>
+            <li><a href="display1.php">All Movies</a></li>
             <li><a href="display1.php?display=marvelstudio">Created by Marvel Movie Studio</a></li>
             <li><a href="display1.php?display=after2010">Created After 2010</a></li>
-            <li><a href="display1.php?dispaly=xmemfilms">XMen Films</a></li>
+            <li><a href="display1.php?dispaly=xmenfilms">XMen Films</a></li>
         </ul>
 
     </nav>
