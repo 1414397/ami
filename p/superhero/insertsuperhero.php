@@ -16,7 +16,7 @@
 <main class="grid-container">
     <nav class="grid-33">
         <ul id="mainlist">
-            <li> <a href="superheroform.html">Superhero form</a> </li>
+            <li> <a href="insertsuperhero.php">Superhero form</a> </li>
             <li> <a href="showsuperhero.php">Show Superheros</a>  </li>
             <li> <a href="battle.php"></a> </li>
             <li> <a href="displaybattles.php"></a>  </li>
