@@ -3,7 +3,7 @@
 include("connection.php");
 
 
-$sql_query ="SELECT * FROM superheros" ;
+$sql="SELECT * FROM superheros" ;
 
 
 $result =mysqli_query($db, $sql);
