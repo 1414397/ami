@@ -22,6 +22,7 @@
 
     </nav>
     <aside>
+        <?php
         include('connection.php');
         $display=$_GET["display"];
         if($display=="all"){
@@ -29,15 +30,15 @@
         }
         else if($display=="after2010")
         {
-        $sql = "SELECT * FROM marvelmovies1 WHERE yearReleased>2010";
+        $sql = "SELECT * FROM marvelmovies1 WHERE yearReleased>'2010'";
         }
         else if($display=="xmenfilms")
         {
-        $sql = "SELECT * FROM marvelmovies1 WHERE title="X-Men";
+        $sql = "SELECT * FROM marvelmovies1 WHERE title like 'X-Man%'";
         }
         else if($display=="marvelstudio")
         {
-        $sql = "SELECT * FROM marvelmovies1 WHERE productionStudio="Marvel Studios";
+        $sql = "SELECT * FROM marvelmovies1 WHERE productionStudio='Marvel Studios'";
         }
 
 
