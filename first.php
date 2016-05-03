@@ -1,26 +1,14 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Aaru
- * Date: 05/04/2016
- * Time: 21:17
- */
-echo "ami jiyani";
-echo " how"." are "." you<br>";
-echo 5*9;
-echo "<br>";
-$name="jiyani";
-echo $name." ami";
-$myage=19;
-echo "<br>";
-if($myage>21){
-    echo "sausage";}
-    elseif($myage>18){
-        echo "mugs";}
-        elseif($myage>16){
-            echo"spaces";}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello selector</title>
+</head>
+<body>
+<ul>
 
-echo"name";
-
-
-?>
+    <li><a href="printer.php?place=earth">Earth        </a></li>
+    <li><a href="printer.php?place=mars">     Mars   </a></li>
+    <li><a href="printer.php?place=uranus">     Uranus   </a></li>
+</ul>
+</body>
+</html>
