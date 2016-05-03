@@ -15,7 +15,7 @@ $power=$_POST["power"];
 
 $sql="INSERT INTO superheros (firstname,lastname,mainSuperpower) VALUES ('$fname','$sname','$power')";
 
-if(mysqli_query($dp,$sql)){
+if(mysqli_query($db,$sql)){
 }
 else{
     echo "Error:".$sql."<br>".mysqli_error($db);
