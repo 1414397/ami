@@ -1,0 +1,70 @@
+#logo{
+    width: 100px;
+
+}
+
+#mainlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+#mainlist li{
+
+}
+#logo{
+    width: 150px;
+    float: left;
+
+}
+
+
+#mainlist{
+    list-style-type: none;
+
+
+}
+
+li a{
+    text-decoration: none;
+    padding: 10px;
+
+    text-align: center;
+}
+body{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+}
+main{
+    padding-right: 0px;
+    margin-top: auto;
+}
+header{
+    background-color: #59a8ff;
+}
+footer{
+    background: darkolivegreen;
+
+    text-align: center;
+}
+nav{
+    background: #ed956b;
+
+    margin-top: 0px;
+    padding-left: 0px;
+
+}
+aside{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    background: #76b3ff;
+
+}
+h3{
+    position: relative;
+    margin-top: -20px;
+}
