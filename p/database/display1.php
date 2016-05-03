@@ -17,7 +17,7 @@
             <li><a href="display1.php">All Movies</a></li>
             <li><a href="display1.php?display=marvelstudio">Created by Marvel Movie Studio</a></li>
             <li><a href="display1.php?display=after2010">Created After 2010</a></li>
-            <li><a href="display1.php?dispaly=xmen">XMen Films</a></li>
+            <li><a href="display1.php?display=xmen">XMen Films</a></li>
         </ul>
 
     </nav>
