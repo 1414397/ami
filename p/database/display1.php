@@ -17,7 +17,7 @@
             <li><a href="display1.php<">All Movies</a></li>
             <li><a href="display1.php?display=marvelstudio">Created by Marvel Movie Studio</a></li>
             <li><a href="display1.php?display=after2010">Created After 2010</a></li>
-            <li><a href="display1.php?dispaly=xmemfilms">XMen Films</a></li>
+            <li><a href="display1.php?dispaly=xmenfilms">XMen Films</a></li>
         </ul>
 
     </nav>
@@ -25,11 +25,8 @@
         <?php
         include('connection.php');
         $display=$_GET["display"];
-        if($display == NULL)
-        {
-        $sql = "SELECT * FROM marvelmovies1";
-        }
-        else if($display=="after2010")
+
+        if($display=="after2010")
         {
         $sql = "SELECT * FROM marvelmovies1 WHERE yearReleased > '2010'";
         }
@@ -41,7 +38,10 @@
         {
         $sql = "SELECT * FROM marvelmovies1 WHERE productionStudio='Marvel Studios'";
         }
-
+       else
+        {
+            $sql = "SELECT * FROM marvelmovies1";
+        }
 
 
         $result =mysqli_query($db, $sql);
